@@ -1,6 +1,6 @@
 #summary Command-line arguments and how they're being handled
 
-= Command-line Arguments =
+= Introduction =
 
 There are five command-line arguments that can be given to the application.
 
