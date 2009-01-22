@@ -1,5 +1,5 @@
 #summary The syntax of the input file give to the application.
-= The Input File =
+= Introduction =
 
 The application takes an input file as a command-line argument. The input file can contain information lines and comment lines.
 
