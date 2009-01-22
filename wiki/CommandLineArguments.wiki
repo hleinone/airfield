@@ -9,6 +9,7 @@ There are five command-line arguments that can be given to the application.
 || `--findShortestRoute` || Indicates that the application should calculate the shortest route through the aifields listed in the input file. ||
 || `--startingPoint` || The route starting point can be explicitly set using this command in addition to the `--findShortestRoute` command. ||
 || `--printRouteLength` || Prints the route length. ||
+<br></br>
 
 = Implementation details =
 
