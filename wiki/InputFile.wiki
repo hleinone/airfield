@@ -13,4 +13,4 @@ The application doesn't care about any other data from the information line, tha
 
 = Implementation Details =
 
-The reading of the file is encapsulated in AirfieldFileReader class. Scala (like Java) contains a bug (or some consider it as a feature) regarding reading UTF-8 files. The byte-order-mark, which can exist in the beginning of the first line by the UTF specification, is included in the String representation of the line. Some, mostly Windows, editors tend to put it there, so for better compatibility the application looks for that in all files.
+The reading of the file is encapsulated in !AirfieldFileReader class. Scala (like Java) contains a bug (or some consider it as a feature) regarding reading UTF-8 files. The byte-order-mark, which can exist in the beginning of the first line by the UTF specification, is included in the String representation of the line. Some, mostly Windows, editors tend to put it there, so for better compatibility the application looks for that in all files.
