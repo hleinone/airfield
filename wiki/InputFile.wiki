@@ -1,4 +1,4 @@
-#summary The syntax of the input file give to the application.
+#summary The syntax for the input file given to the application.
 = Introduction =
 
 The application takes an input file as a command-line argument. The input file can contain information lines and comment lines.
