@@ -19,7 +19,7 @@ The functionality required by a command-line argument is encapsulated in a corre
 Since the Commands can be piped in certain order we're using Gang of Four [http://en.wikipedia.org/wiki/Chain-of-responsibility_pattern Chain-of-Responsibility] to pass the result of preceding Command to the next one. Each Command is generized to declare what type of Commands it can follow.
 
 === Factory Method ===
-The Commands are being created at CommandFactory, which is done by Gang of Four [http://en.wikipedia.org/wiki/Factory_method_pattern Factory Method pattern]. It takes the command-line arguments as a parameter and returns the Command that is to be executed.
+The Commands are being created at !CommandFactory, which is done by Gang of Four [http://en.wikipedia.org/wiki/Factory_method_pattern Factory Method pattern]. It takes the command-line arguments as a parameter and returns the Command that is to be executed.
 
 http://airfield.googlecode.com/svn/commands.png<br></br>
 _The Command object hierarchy of the application._
