@@ -2,6 +2,9 @@ package org.beardedgeeks.airfield.model
 
 import org.slf4j.LoggerFactory
 import com.meterware.httpunit.{HttpUnitOptions, WebConversation, GetMethodWebRequest, HttpException}
+import java.io.IOException
+import java.net.MalformedURLException
+import org.xml.sax.SAXException
 import org.beardedgeeks.airfield.math.DecimalDegree
 import org.beardedgeeks.airfield.geo.Coordinate
 import org.beardedgeeks.airfield.io.SkippingLineException
@@ -48,7 +51,12 @@ object AirfieldFactory {
        val response = try {
          webConversation.getResponse(request)
        } catch {
-         case e:Exception => throw new NoSuchAirfieldException("No airfield '" + mnemonic + "' exists")
+         case e:MalformedURLException =>
+           throw new NoSuchAirfieldException("No airfield '" + mnemonic + "' exists")
+         case e:IOException =>
+           throw new NoSuchAirfieldException("No airfield '" + mnemonic + "' exists")
+         case e:SAXException =>
+           throw new NoSuchAirfieldException("No airfield '" + mnemonic + "' exists")
        }
        // in case we get some other url than the requested, something is wrong
        if (response.getURL.toString != airFieldCoordinatesUrl + mnemonic)
