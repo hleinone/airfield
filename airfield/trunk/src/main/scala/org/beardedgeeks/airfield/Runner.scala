@@ -7,12 +7,12 @@ import org.beardedgeeks.airfield.model.{InsufficentAirfieldDataException, NoSuch
  * The main class for running the application.
  * @author hannu
  */
-object Runner {
+object Runner extends Application {
   /**
    * Starts executing the application.
    * @param args The command-line arguments.
    */
-  def main(args:Array[String]) {
+  override def main(args:Array[String]) {
     val command = CommandFactory.get(args)
     try {
       command.execute()
