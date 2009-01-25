@@ -7,11 +7,11 @@ import org.slf4j.LoggerFactory
  * @author hannu
  */
 class UnsupportedCommand(val cause:String) extends Command[Unit, Unit](None) {
-  private val logger = LoggerFactory.getLogger(getClass)
+  private final val logger = LoggerFactory.getLogger(getClass)
 
   protected def executeCommand(result:Option[Unit]):Unit = {
     logger.warn(cause)
     println(cause)
-    println("Try 'ant run -Dargs=\"--help\"' for more information.")
+    println("Try '--help' for more information.")
   }
 }
