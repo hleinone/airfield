@@ -6,4 +6,4 @@ The distance between two airfields is calculated using the [http://en.wikipedia.
 
 = Implementation Details =
 
-The GreatCircle object contains the Great-circle distance formula and calculates the distances between two airfields. The total distance of a route is calculated on RouteCalculator which simply adds the distances between the airfields and returns the result. The shortest route brute-force algorithm is optimized so that it doesn't add exactly same routes twice to the list of all possible routes.
+The !GreatCircle object contains the Great-circle distance formula and calculates the distances between two airfields. The total distance of a route is calculated on !RouteCalculator which simply adds the distances between the airfields and returns the result. The shortest route brute-force algorithm is optimized so that it doesn't add exactly same routes twice to the list of all possible routes.
