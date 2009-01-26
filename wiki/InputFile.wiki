@@ -4,10 +4,14 @@
 The application takes an input file as a command-line argument. The input file can contain information lines and comment lines. An example input file can be found [http://airfield.googlecode.com/svn/example-input.txt here].
 
 An example of a comment line:
- {{{-- Helsinki-Vantaa Airport}}}
+{{{
+-- Helsinki-Vantaa Airport
+}}}
 
 An example of an information line:
- {{{EFHK}}}
+{{{
+EFHK
+}}}
 
 The application doesn't care about any other data from the information line, than the four-letter [http://en.wikipedia.org/wiki/ICAO_airport_code International Civil Aviation Organization airport code]. The ICAO code is used to retrieve airfield data from the Internet.
 
