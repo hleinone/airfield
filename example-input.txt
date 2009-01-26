@@ -1,0 +1,4 @@
+﻿-- Helsinki-Vantaa -> Savikko -> Helsinki-Vantaa
+EFHK
+EFNS
+EFHK
