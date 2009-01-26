@@ -1,7 +1,7 @@
 #summary The syntax for the input file given to the application.
 = Introduction =
 
-The application takes an input file as a command-line argument. The input file can contain information lines and comment lines.
+The application takes an input file as a command-line argument. The input file can contain information lines and comment lines. An example input file can be found [http://airfield.googlecode.com/svn/example-input.txt here].
 
 An example of a comment line:
  {{{-- Helsinki-Vantaa Airport}}}
