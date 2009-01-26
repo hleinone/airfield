@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.beardedgeeks.airfield</groupId>
+	<artifactId>airfield</artifactId>
+	<version>1.0</version>
+	<packaging>jar</packaging>
+	<name>Airfield</name>
+	<description>Command-line tool made with Scala that provides distance calculation functionalities between several airfields.</description>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<organization>
+		<name>Bearded Geeks</name>
+		<url>http://beardedgeeks.org</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>hannu</id>
+			<name>Hannu Leinonen</name>
+			<email>hleinone@gmail.com</email>
+			<organization>Bearded Geeks</organization>
+			<organizationUrl>http://beardedgeeks.org</organizationUrl>
+			<timezone>+2</timezone>
+			<roles>
+				<role>owner</role>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
+
+	<issueManagement>
+		<system>Google Code</system>
+		<url>http://code.google.com/p/airfield/issues/list</url>
+	</issueManagement>
+
+	<scm>
+		<url>http://code.google.om/p/airfield/source/browse</url>
+		<connection>scm:svn:http://aifield.googlecode.com/svn</connection>
+		<developerConnection>scm:svn:https://aifield.googlecode.com/svn</developerConnection>
+	</scm>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.scala-lang</groupId>
+			<artifactId>scala-library</artifactId>
+			<version>2.7.3</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>0.9.9</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.5.6</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>httpunit</groupId>
+			<artifactId>httpunit</artifactId>
+			<version>1.6.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>xerces</groupId>
+					<artifactId>xmlParserAPIs</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.servlet</groupId>
+					<artifactId>servlet-api</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>jtidy</groupId>
+					<artifactId>jtidy</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!--
+			These are required only at runtime but since onejar-maven-plugin
+			doesn't support this, they're listed as compile-time
+		-->
+		<dependency>
+			<groupId>xerces</groupId>
+			<artifactId>xercesImpl</artifactId>
+			<version>2.6.2</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>0.9.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>rhino</groupId>
+			<artifactId>js</artifactId>
+			<version>1.5R4.1</version>
+			<type>jar</type>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>scala-tools.org</id>
+			<url>http://scala-tools.org/repo-releases</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>scala-tools.org</id>
+			<url>http://scala-tools.org/repo-releases</url>
+		</pluginRepository>
+		<pluginRepository>
+			<id>dstovall.org</id>
+			<url>http://dstovall.org/maven2/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<sourceDirectory>src/main/scala</sourceDirectory>
+		<testSourceDirectory>src/test/scala</testSourceDirectory>
+
+		<plugins>
+			<plugin>
+				<groupId>org.scala-tools</groupId>
+				<artifactId>maven-scala-plugin</artifactId>
+				<version>2.9.1</version>
+				<executions>
+					<execution>
+						<id>compile</id>
+						<goals>
+							<goal>add-source</goal>
+							<goal>compile</goal>
+							<goal>testCompile</goal>
+						</goals>
+						<configuration>
+							<args>
+								<arg>-deprecation</arg>
+								<arg>-target:jvm-1.5</arg>
+							</args>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>scala.in.programming.airfield.Runner</mainClass>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<downloadSources>true</downloadSources>
+					<buildcommands>
+						<java.lang.String>ch.epfl.lamp.sdt.core.scalabuilder</java.lang.String>
+					</buildcommands>
+					<projectnatures>
+						<java.lang.String>ch.epfl.lamp.sdt.core.scalanature</java.lang.String>
+						<java.lang.String>org.eclipse.jdt.core.javanature</java.lang.String>
+					</projectnatures>
+					<excludes>
+						<exclude>org.scala-lang:scala-library</exclude>
+					</excludes>
+					<classpathContainers>
+						<classpathContainer>ch.epfl.lamp.sdt.launching.SCALA_CONTAINER</classpathContainer>
+					</classpathContainers>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>org.beardedgeeks.airfield.Runner</mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.dstovall</groupId>
+				<artifactId>onejar-maven-plugin</artifactId>
+				<version>1.2.2</version>
+				<executions>
+					<execution>
+						<configuration>
+							<!-- Optional -->
+							<onejarVersion>0.96</onejarVersion>
+						</configuration>
+						<goals>
+							<goal>one-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.scala-tools</groupId>
+				<artifactId>maven-scala-plugin</artifactId>
+				<version>2.9.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
+</project>
