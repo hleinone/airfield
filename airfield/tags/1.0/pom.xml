@@ -42,9 +42,9 @@
 	</issueManagement>
 
 	<scm>
-		<url>http://code.google.om/p/airfield/source/browse</url>
-		<connection>scm:svn:http://aifield.googlecode.com/svn</connection>
-		<developerConnection>scm:svn:https://aifield.googlecode.com/svn</developerConnection>
+		<url>http://code.google.com/p/airfield/source/browse/#svn/airfield/tags/1.0</url>
+		<connection>scm:svn:http://aifield.googlecode.com/svn/tags/1.0</connection>
+		<developerConnection>scm:svn:https://aifield.googlecode.com/svn/tags/1.0</developerConnection>
 	</scm>
 
 	<dependencies>
