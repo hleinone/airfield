@@ -2,7 +2,7 @@ package org.beardedgeeks.airfield.cmd
 
 /**
  * GOF Command/Chain-of-responsibility representing the application logic to be executed.
- * @author hannu
+ * @author hleinone
  */
 abstract class Command[G, R](private val before:Option[Command[Any, G]]) {
   /**

@@ -4,7 +4,7 @@ import org.slf4j.LoggerFactory
 
 /**
  * Represents command-line argument --help. Doesn't have a preceding command.
- * @author hannu
+ * @author hleinone
  */
 class HelpCommand() extends Command[Unit, Unit](None) {
   private final val logger = LoggerFactory.getLogger(getClass)

@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory
 
 /**
  * The main class for running the application.
- * @author hannu
+ * @author hleinone
  */
 object Runner extends Application {
   private val logger = LoggerFactory.getLogger(getClass)

@@ -12,7 +12,7 @@ import scala.collection.mutable.HashMap
 
 /**
  * GOF Factory Method for returning airfields by the International Civil Aviation Organization airport code.
- * @author hannu
+ * @author hleinone
  */
 object AirfieldFactory {
   private val logger = LoggerFactory.getLogger(getClass)

@@ -11,7 +11,7 @@ import org.beardedgeeks.airfield.model.Airfield
 /**
  * Represents command-line argument --printRouteLength. Can take command returning 
  * Buffer[Airfield] as the preceding command.
- * @author hannu
+ * @author hleinone
  */
 class PrintRouteLengthCommand(private val before:Option[Command[Any, Buffer[Airfield]]], val fileName:String) extends Command[Buffer[Airfield], Unit](before) {
   private val logger = LoggerFactory.getLogger(getClass)

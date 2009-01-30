@@ -10,12 +10,12 @@ import org.beardedgeeks.airfield.model.Airfield
 /**
  * Represents command-line argument --findShortestRoute. Can take command returning an 
  * Airfield object as the preceding command.
- * @author hannu
+ * @author hleinone
  */
 class FindShortestRouteCommand(private val before:Option[Command[Any, Airfield]], val airfields:Buffer[Airfield]) extends Command[Airfield, Buffer[Airfield]](before) {
-  private val logger = LoggerFactory.getLogger(getClass)
-  private val decimalFormat = new DecimalFormat("0.00")
-  private val routes = new ListBuffer[Buffer[Airfield]]()
+  private final val logger = LoggerFactory.getLogger(getClass)
+  private final val decimalFormat = new DecimalFormat("0.00")
+  private final val routes = new ListBuffer[Buffer[Airfield]]()
 
   protected def executeCommand(result:Option[Airfield]):Buffer[Airfield] = {
     def findAllRoutes(current:Airfield, route:Buffer[Airfield], left:Buffer[Airfield]):Unit = {

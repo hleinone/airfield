@@ -4,7 +4,7 @@ import org.beardedgeeks.airfield.geo.Coordinate
 
 /**
  * Calculates the distance between two points.
- * @author hannu
+ * @author hleinone
  */
 object GreatCircle {
   /**

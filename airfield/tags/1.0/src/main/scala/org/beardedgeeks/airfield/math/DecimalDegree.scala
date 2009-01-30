@@ -2,7 +2,7 @@ package org.beardedgeeks.airfield.math
 
 /**
  * Represents a value in decimal degree.
- * @author hannu
+ * @author hleinone
  */
 class DecimalDegree(var value:Double) {
   override def toString():String = {

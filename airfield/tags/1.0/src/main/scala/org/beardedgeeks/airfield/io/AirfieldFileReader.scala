@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory
 
 /**
  * Reads a file supposedly containing airfield information.
- * @author hannu
+ * @author hleinone
  */
 object AirfieldFileReader {
   private val logger = LoggerFactory.getLogger(getClass)
