@@ -10,7 +10,7 @@ import scala.io.Source
 
 /**
  * GOF Factory Method for returning the command from command-line arguments.
- * @author hannu
+ * @author hleinone
  */
 object CommandFactory {
   private val logger = LoggerFactory.getLogger(getClass)

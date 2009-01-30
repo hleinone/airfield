@@ -7,7 +7,7 @@ import scala.collection.mutable.Buffer
 
 /**
  * Calculates the distance of a route.
- * @author hannu
+ * @author hleinone
  */
 object RouteCalculator {
   private val logger = LoggerFactory.getLogger("org.beardedgeeks.airfield.math.RouteCalculator")

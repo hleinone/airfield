@@ -4,7 +4,7 @@ import org.beardedgeeks.airfield.math.DecimalDegree
 
 /**
  * Represents a place on the surface of Earth.
- * @author hannu
+ * @author hleinone
  */
 trait Coordinate {
   val latitude:DecimalDegree

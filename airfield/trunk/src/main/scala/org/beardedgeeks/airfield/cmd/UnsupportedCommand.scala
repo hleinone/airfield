@@ -4,7 +4,7 @@ import org.slf4j.LoggerFactory
 
 /**
  * Represents an unsupported command-line argument. Doesn't have a preceding command.
- * @author hannu
+ * @author hleinone
  */
 class UnsupportedCommand(val cause:String) extends Command[Unit, Unit](None) {
   private final val logger = LoggerFactory.getLogger(getClass)
