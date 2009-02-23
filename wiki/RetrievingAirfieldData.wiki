@@ -1,4 +1,4 @@
-#summary How the airfield data is retrieved from the Internet
+#summary How the airfield data are retrieved from the Internet
 
 = Introduction =
 
@@ -6,6 +6,6 @@ The applications retrieves the airfield data from http://gc.kls2.com/airport/.
 
 = Implementation Details =
 
-[http://httpunit.sourceforge.net/ HTTPUnit] is used to retrive the data. The data is then stored on a !HashMap for a faster retrieval if the same airfield is requested several times. The data retrieved for each of airfields contains its coordinates in decimal degree format, its name etc.
+[http://httpunit.sourceforge.net/ HTTPUnit] is used to retrive the data. The data are then stored in !HashMap for faster retrieval if the same airfield is requested several times. The data retrieved for each of airfields contain its coordinates in decimal degree format, its name etc.
 
-The data is stored in Airfield objects which extend Coordinate trait. The Coordinate encapsulates the geographical information and makes the geographical calculation methods more reusable.
+The data are stored in Airfield objects which extend Coordinate trait. The Coordinate encapsulates the geographical information and makes the geographical calculation methods more reusable.
