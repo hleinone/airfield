@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.beardedgeeks.airfield</groupId>
+	<groupId>org.beardedgeeks</groupId>
 	<artifactId>airfield</artifactId>
-	<version>1.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Airfield</name>
 	<description>Command-line tool made with Scala that provides distance calculation functionalities between several airfields.</description>
@@ -20,7 +20,7 @@
 
 	<organization>
 		<name>Bearded Geeks</name>
-		<url>http://beardedgeeks.org</url>
+		<!-- <url>http://beardedgeeks.org</url> -->
 	</organization>
 
 	<developers>
@@ -45,8 +45,8 @@
 
 	<scm>
 		<url>http://code.google.com/p/airfield/source/browse/#svn/airfield/tags/1.0</url>
-		<connection>scm:svn:http://aifield.googlecode.com/svn/tags/1.0</connection>
-		<developerConnection>scm:svn:https://aifield.googlecode.com/svn/tags/1.0</developerConnection>
+		<connection>scm:svn:http://aifield.googlecode.com/svn/airfield/tags/1.0</connection>
+		<developerConnection>scm:svn:https://aifield.googlecode.com/svn/airfield/tags/1.0</developerConnection>
 	</scm>
 
 	<dependencies>
@@ -162,9 +162,6 @@
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
-					<mainClass>scala.in.programming.airfield.Runner</mainClass>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -225,7 +222,7 @@
 				<artifactId>maven-scala-plugin</artifactId>
 				<version>2.9.1</version>
 				<configuration>
-					<vscalaVersion>1.0</vscalaVersion>
+					<scalaVersion>2.7.3</scalaVersion>
 				</configuration>
 			</plugin>
 		</plugins>
