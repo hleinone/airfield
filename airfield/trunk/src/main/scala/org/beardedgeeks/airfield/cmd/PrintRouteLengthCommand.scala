@@ -14,11 +14,11 @@ import org.beardedgeeks.airfield.model.Airfield
  * @author hleinone
  */
 class PrintRouteLengthCommand(private val before:Option[Command[Any, Buffer[Airfield]]], val fileName:String) extends Command[Buffer[Airfield], Unit](before) {
-  private val logger = LoggerFactory.getLogger(getClass)
-  private val decimalFormat = new DecimalFormat("0.00")
+  private final val logger = LoggerFactory.getLogger(getClass)
+  private final val decimalFormat = new DecimalFormat("0.00")
 
   protected def executeCommand(result:Option[Buffer[Airfield]]):Unit = {
-    var airfields:Buffer[Airfield] = result match {
+    val airfields:Buffer[Airfield] = result match {
       case Some(value) => value
       case None => AirfieldFileReader.readFile(fileName)
     }

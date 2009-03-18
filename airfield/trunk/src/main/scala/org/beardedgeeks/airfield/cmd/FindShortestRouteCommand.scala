@@ -35,7 +35,7 @@ class FindShortestRouteCommand(private val before:Option[Command[Any, Airfield]]
         if(airfields.contains(value)) {
           findAllRoutes(value, new ListBuffer[Airfield](), airfields.clone)
         } else {
-          throw new InsufficentParameterException("Starting point " + value + " not in airfields " + airfields + ".")
+          throw InsufficentParameterException("Starting point " + value + " not in airfields " + airfields + ".")
         }
       }
       case None => for(start <- airfields) {

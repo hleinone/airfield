@@ -42,7 +42,7 @@ object AirfieldFileReader {
       if(otherLine.trim().length != 0) {
         val pieces:Array[String] = otherLine.trim().split("\t")
         try {
-          var airfield = AirfieldFactory.get(pieces(0))
+          val airfield = AirfieldFactory.get(pieces(0))
           airfields += airfield
         } catch {
           case e:SkippingLineException => logger.debug("Skipping line... " + e.getMessage)

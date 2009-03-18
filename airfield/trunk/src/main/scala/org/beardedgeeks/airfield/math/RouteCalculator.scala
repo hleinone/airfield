@@ -20,11 +20,12 @@ object RouteCalculator {
    */
   def routeLength(route:Buffer[_ <: Coordinate]):Double = {
     implicit def decimalDegree2Radian(arg:DecimalDegree):Radian = {
-      return new Radian(arg.value * Math.Pi / 180.0)
+      return Radian(arg.value * Math.Pi / 180.0)
     }
 
     var totalDistance = 0.0
     var i = 0
+    //FIXME use foldRight
     while(i + 1 < route.length) {
       val origin = route(i)
       val destination = route(i + 1)
