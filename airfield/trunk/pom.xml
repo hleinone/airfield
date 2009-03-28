@@ -132,8 +132,8 @@
 			<url>http://scala-tools.org/repo-releases</url>
 		</pluginRepository>
 		<pluginRepository>
-			<id>dstovall.org</id>
-			<url>http://dstovall.org/maven2/</url>
+            <id>onejar-maven-plugin.googlecode.com</id>
+            <url>http://onejar-maven-plugin.googlecode.com/svn/mavenrepo</url>
 		</pluginRepository>
 	</pluginRepositories>
 
@@ -199,7 +199,7 @@
 			<plugin>
 				<groupId>org.dstovall</groupId>
 				<artifactId>onejar-maven-plugin</artifactId>
-				<version>1.2.2</version>
+                <version>1.3.0</version>
 				<executions>
 					<execution>
 						<configuration>
