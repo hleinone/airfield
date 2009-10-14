@@ -1,12 +1,12 @@
 package org.beardedgeeks.airfield.cmd
 
-import java.io.FileNotFoundException
-import java.lang.reflect.{ParameterizedType, Type, TypeVariable}
-import org.slf4j.LoggerFactory
-import scala.collection.mutable.Buffer
-import org.beardedgeeks.airfield.io.AirfieldFileReader
-import org.beardedgeeks.airfield.model.{Airfield, InsufficentAirfieldDataException}
-import scala.io.Source
+import _root_.java.io.FileNotFoundException
+import _root_.java.lang.reflect.{ParameterizedType, Type, TypeVariable}
+import _root_.org.slf4j.LoggerFactory
+import _root_.scala.collection.mutable.Buffer
+import _root_.org.beardedgeeks.airfield.io.AirfieldFileReader
+import _root_.org.beardedgeeks.airfield.model.{Airfield, InsufficentAirfieldDataException}
+import _root_.scala.io.Source
 
 /**
  * GOF Factory Method for returning the command from command-line arguments.

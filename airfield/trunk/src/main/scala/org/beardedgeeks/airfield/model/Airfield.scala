@@ -1,7 +1,7 @@
 package org.beardedgeeks.airfield.model
 
-import org.beardedgeeks.airfield.geo.Coordinate
-import org.beardedgeeks.airfield.math.DecimalDegree
+import _root_.org.beardedgeeks.airfield.geo.Coordinate
+import _root_.org.beardedgeeks.airfield.math.DecimalDegree
 
 /**
  * Represents an airfield.

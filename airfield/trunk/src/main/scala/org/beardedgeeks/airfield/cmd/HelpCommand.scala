@@ -1,6 +1,6 @@
 package org.beardedgeeks.airfield.cmd
 
-import org.slf4j.LoggerFactory
+import _root_.org.slf4j.LoggerFactory
 
 /**
  * Represents command-line argument --help. Doesn't have a preceding command.

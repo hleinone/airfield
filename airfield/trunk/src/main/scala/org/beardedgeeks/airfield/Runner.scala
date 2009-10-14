@@ -1,8 +1,8 @@
 package org.beardedgeeks.airfield
 
-import org.beardedgeeks.airfield.cmd.{CommandFactory, InsufficentParameterException, UnsupportedCommand}
-import org.beardedgeeks.airfield.model.{InsufficentAirfieldDataException, NoSuchAirfieldException}
-import org.slf4j.LoggerFactory
+import _root_.org.beardedgeeks.airfield.cmd.{CommandFactory, InsufficentParameterException, UnsupportedCommand}
+import _root_.org.beardedgeeks.airfield.model.{InsufficentAirfieldDataException, NoSuchAirfieldException}
+import _root_.org.slf4j.LoggerFactory
 
 /**
  * The main class for running the application.

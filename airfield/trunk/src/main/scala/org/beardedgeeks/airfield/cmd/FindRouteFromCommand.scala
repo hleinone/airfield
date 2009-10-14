@@ -1,11 +1,11 @@
 package org.beardedgeeks.airfield.cmd
 
-import java.text.DecimalFormat
-import org.slf4j.LoggerFactory
-import scala.collection.jcl.TreeMap
-import scala.collection.mutable.{Buffer, ListBuffer}
-import org.beardedgeeks.airfield.math.{DecimalDegree, GreatCircle, Radian, RouteCalculator}
-import org.beardedgeeks.airfield.model.{Airfield, AirfieldFactory}
+import _root_.java.text.DecimalFormat
+import _root_.org.slf4j.LoggerFactory
+import _root_.scala.collection.jcl.TreeMap
+import _root_.scala.collection.mutable.{Buffer, ListBuffer}
+import _root_.org.beardedgeeks.airfield.math.{DecimalDegree, GreatCircle, Radian, RouteCalculator}
+import _root_.org.beardedgeeks.airfield.model.{Airfield, AirfieldFactory}
 
 /**
  * Represents command-line argument --startingPoint=XXXX. Doesn't have a preceding command.

@@ -1,14 +1,14 @@
 package org.beardedgeeks.airfield.model
 
-import org.slf4j.LoggerFactory
-import com.meterware.httpunit.{HttpUnitOptions, WebConversation, GetMethodWebRequest, HttpException}
-import java.io.IOException
-import java.net.MalformedURLException
-import org.xml.sax.SAXException
-import org.beardedgeeks.airfield.math.DecimalDegree
-import org.beardedgeeks.airfield.geo.Coordinate
-import org.beardedgeeks.airfield.io.SkippingLineException
-import scala.collection.mutable.HashMap
+import _root_.org.slf4j.LoggerFactory
+import _root_.com.meterware.httpunit.{HttpUnitOptions, WebConversation, GetMethodWebRequest, HttpException}
+import _root_.java.io.IOException
+import _root_.java.net.MalformedURLException
+import _root_.org.xml.sax.SAXException
+import _root_.org.beardedgeeks.airfield.math.DecimalDegree
+import _root_.org.beardedgeeks.airfield.geo.Coordinate
+import _root_.org.beardedgeeks.airfield.io.SkippingLineException
+import _root_.scala.collection.mutable.HashMap
 
 /**
  * GOF Factory Method for returning airfields by the International Civil Aviation Organization airport code.

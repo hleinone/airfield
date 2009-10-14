@@ -1,6 +1,6 @@
 package org.beardedgeeks.airfield.geo
 
-import org.beardedgeeks.airfield.math.DecimalDegree
+import _root_.org.beardedgeeks.airfield.math.DecimalDegree
 
 /**
  * Represents a place on the surface of Earth.

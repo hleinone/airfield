@@ -1,6 +1,6 @@
 package org.beardedgeeks.airfield.math
 
-import org.beardedgeeks.airfield.geo.Coordinate
+import _root_.org.beardedgeeks.airfield.geo.Coordinate
 
 /**
  * Calculates the distance between two points.
