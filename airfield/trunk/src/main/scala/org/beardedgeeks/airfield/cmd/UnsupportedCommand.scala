@@ -1,6 +1,6 @@
 package org.beardedgeeks.airfield.cmd
 
-import _root_.org.slf4j.LoggerFactory
+import org.slf4j.LoggerFactory
 
 /**
  * Represents an unsupported command-line argument. Doesn't have a preceding command.

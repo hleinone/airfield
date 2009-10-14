@@ -1,9 +1,9 @@
 package org.beardedgeeks.airfield.math
 
-import _root_.java.text.DecimalFormat
-import _root_.org.slf4j.{Logger, LoggerFactory}
-import _root_.org.beardedgeeks.airfield.geo.Coordinate
-import _root_.scala.collection.mutable.Buffer
+import java.text.DecimalFormat
+import org.slf4j.{Logger, LoggerFactory}
+import org.beardedgeeks.airfield.geo.Coordinate
+import scala.collection.mutable.Buffer
 
 /**
  * Calculates the distance of a route.

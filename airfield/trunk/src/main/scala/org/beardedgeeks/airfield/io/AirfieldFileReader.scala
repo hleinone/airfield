@@ -1,9 +1,9 @@
 package org.beardedgeeks.airfield.io
 
-import _root_.scala.collection.mutable.ListBuffer
-import _root_.scala.io.Source
-import _root_.org.beardedgeeks.airfield.model.{Airfield, AirfieldFactory, InsufficentAirfieldDataException, NoSuchAirfieldException}
-import _root_.org.slf4j.LoggerFactory
+import scala.collection.mutable.ListBuffer
+import scala.io.Source
+import org.beardedgeeks.airfield.model.{Airfield, AirfieldFactory, InsufficentAirfieldDataException, NoSuchAirfieldException}
+import org.slf4j.LoggerFactory
 
 /**
  * Reads a file supposedly containing airfield information.

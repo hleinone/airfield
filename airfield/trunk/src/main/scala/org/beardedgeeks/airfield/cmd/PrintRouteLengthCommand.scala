@@ -1,11 +1,11 @@
 package org.beardedgeeks.airfield.cmd
 
-import _root_.java.text.DecimalFormat
-import _root_.org.slf4j.LoggerFactory
-import _root_.scala.collection.mutable.{Buffer, ListBuffer}
-import _root_.org.beardedgeeks.airfield.io.AirfieldFileReader
-import _root_.org.beardedgeeks.airfield.math.{DecimalDegree, GreatCircle, Radian, RouteCalculator}
-import _root_.org.beardedgeeks.airfield.model.Airfield
+import java.text.DecimalFormat
+import org.slf4j.LoggerFactory
+import scala.collection.mutable.{Buffer, ListBuffer}
+import org.beardedgeeks.airfield.io.AirfieldFileReader
+import org.beardedgeeks.airfield.math.{DecimalDegree, GreatCircle, Radian, RouteCalculator}
+import org.beardedgeeks.airfield.model.Airfield
 
 
 /**

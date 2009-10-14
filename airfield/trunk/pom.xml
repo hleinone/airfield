@@ -221,6 +221,7 @@
 	</reporting>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<scala.version>2.7.6</scala.version>
 		<maven-scala-plugin.version>2.9.1</maven-scala-plugin.version>
 	</properties>
