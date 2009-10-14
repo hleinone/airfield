@@ -1,0 +1,2 @@
+23:05:56.250 [main] DEBUG org.beardedgeeks.airfield.Runner$ - Executing org.beardedgeeks.airfield.cmd.UnsupportedCommand@1de3f2d
+23:05:56.265 [main] WARN  o.b.airfield.cmd.UnsupportedCommand - Please specify a command
