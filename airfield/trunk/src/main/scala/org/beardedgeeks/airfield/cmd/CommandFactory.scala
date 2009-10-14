@@ -47,7 +47,7 @@ object CommandFactory {
       return new HelpCommand()
       
     try {
-      Source.fromFile(args(0))
+      Source.fromFile(args(0), "UTF-8")
     } catch {
       case e:FileNotFoundException => return new UnsupportedCommand("File not found: " + args(0))
     }
