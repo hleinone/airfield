@@ -1,0 +1,19 @@
+# Introduction #
+
+The application takes an input file as a command-line argument. The input file can contain information lines and comment lines. An example input file can be found [here](http://airfield.googlecode.com/svn/example-input.txt).
+
+An example of a comment line:
+```
+-- Helsinki-Vantaa Airport
+```
+
+An example of an information line:
+```
+EFHK
+```
+
+The application doesn't care about any other data from the information line, than the four-letter [International Civil Aviation Organization airport code](http://en.wikipedia.org/wiki/ICAO_airport_code). The ICAO code is used to retrieve airfield data from the Internet.
+
+# Implementation Details #
+
+The reading of the file is encapsulated in AirfieldFileReader class. Scala (like Java) contains a bug (or some consider it as a feature) regarding reading UTF-8 files. The byte-order-mark, which can exist in the beginning of the first line by the UTF specification, is included in the String representation of the line. Some, mostly Windows, editors tend to put it there, so for better compatibility the application looks for that in all files.

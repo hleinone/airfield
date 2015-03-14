@@ -1,0 +1,9 @@
+# Introduction #
+
+The applications retrieves the airfield data from http://gc.kls2.com/airport/.
+
+# Implementation Details #
+
+[HTTPUnit](http://httpunit.sourceforge.net/) is used to retrive the data. The data are then stored in HashMap for faster retrieval if the same airfield is requested several times. The data retrieved for each of airfields contain its coordinates in decimal degree format, its name etc.
+
+The data are stored in Airfield objects which extend Coordinate trait. The Coordinate encapsulates the geographical information and makes the geographical calculation methods more reusable.
